@@ -11,8 +11,11 @@ const t = initTRPC.context<Context>().create();
 
 export const appRouter = t.router({
   hello: t.procedure.query(async () => {
-    const message = "Hello Guys!!. This is a new message";
-    return { message };
+    const message = {
+      text: "Hello Guys!!. This is a new message",
+      from: "Samarth",
+    };
+    return message;
   }),
 });
 
