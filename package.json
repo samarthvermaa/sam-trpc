@@ -1,0 +1,35 @@
+{
+  "name": "sam-trpc",
+  "version": "1.0.0",
+  "description": "tRPC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samarthvermaa/sam-trpc.git"
+  },
+  "keywords": [
+    "trpc"
+  ],
+  "author": "Samarth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samarthvermaa/sam-trpc/issues"
+  },
+  "homepage": "https://github.com/samarthvermaa/sam-trpc#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@trpc/server": "^10.45.1",
+    "express": "^4.18.2"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
